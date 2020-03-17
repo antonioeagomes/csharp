@@ -3,9 +3,9 @@ using CSharp.Classes;
 
 namespace CSharp.Exec
 {
-    public static class ConstructorExec
+    public class ConstructorExec: IExecutable
     {
-        public static void Run(){
+        public void Execute(){
             var costumer = new Customer();
             Console.WriteLine($"{costumer.Id} - {costumer.Name}");
 

@@ -3,15 +3,15 @@ using CSharp.Classes;
 
 namespace CSharp.Exec
 {
-    public static class MethodExec
+    public class MethodExec: IExecutable
     {
-        public static void Run()
+        public void Execute()
         {
             // UseRefOut();
             UsePoint();            
         }
 
-        public static void UsePoint()
+        private static void UsePoint()
         {
             /* Method overloading */
             try
@@ -33,7 +33,7 @@ namespace CSharp.Exec
 
         }
 
-        public static void UseRefOut()
+        private static void UseRefOut()
         {
             /* Ref and Out modifiers */
             int a = 3;

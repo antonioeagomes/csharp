@@ -3,9 +3,9 @@ using CSharp.Classes;
 
 namespace CSharp.Exec
 {
-    public static class ClassExec
+    public class ClassExec : IExecutable
     {
-        public static void Run()
+        public void Execute()
         {
             Person p = new Person(); /* Parameterless constructor */
             p.Name = "John";
