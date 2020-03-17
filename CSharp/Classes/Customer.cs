@@ -30,9 +30,4 @@ namespace CSharp.Classes
             this.Name = name;
         }
     }
-
-    public class Order {
-
-    }
-
 }
