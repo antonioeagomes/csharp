@@ -10,6 +10,9 @@ namespace CSharp.Exec
             Person p = new Person(); /* Parameterless constructor */
             p.Name = "John";
             p.Introduce("James");
+            p.SetFavoriteColor("Blue"); // Favorite color encapsulated
+
+            Console.WriteLine($"{p.GetFavoriteColor()} is {p.Name}'s favourite color");
 
             var person = Person.Parse("Mark");
             person.Introduce("Maria");
@@ -20,10 +23,12 @@ namespace CSharp.Exec
             var fourthPerson = new Person
             {
                 Id = 1,
-                Name = "Baltazar",
+                Name = "Baltazer",
                 LastName = "Bush",
-                Birthdate = new DateTime(1974, 8, 19)
             };
+
+            var oldPerson = new Person(new DateTime(1789, 3, 18));
+            Console.WriteLine($"{oldPerson.Age} years old!");
         }
     }
 }

@@ -7,9 +7,9 @@ namespace CSharp
     {
         static void Main(string[] args)
         {
-           // ClassExec.Run();
+            ClassExec.Run();
            // ConstructorExec.Run();
-           MethodExec.Run();
+           // MethodExec.Run();
         }
     }
 }
