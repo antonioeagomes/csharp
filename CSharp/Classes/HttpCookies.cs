@@ -20,5 +20,14 @@ namespace CSharp.Classes
 
             set { _dict[key] = value; }
         }
+
+        /* A verbosis way of doing the same */
+        public void SetItem(string key, string value) {
+            _dict[key] = value;
+        }
+
+        public string GetItem(string key) {
+            return _dict[key];
+        }
     }
 }
