@@ -72,7 +72,9 @@ namespace CSharp
                 new MenuItem("Constructor", typeof(ConstructorExec)),
                 new MenuItem("Method", typeof(MethodExec)),
                 new MenuItem("Indexers", typeof(DictionariesExec)),
-                new MenuItem("Stopwatch", typeof(StopwatchExec))
+                new MenuItem("Stopwatch", typeof(StopwatchExec)),
+                new MenuItem("Inheritance", typeof(InheritanceExec)),
+                new MenuItem("Composition", typeof(CompositionExec))
             };
         }
     }
