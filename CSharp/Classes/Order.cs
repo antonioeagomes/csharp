@@ -17,8 +17,4 @@ namespace CSharp.Classes
             Products = new List<Product>();
         }
     }
-
-    public class Product {
-
-    }
 }

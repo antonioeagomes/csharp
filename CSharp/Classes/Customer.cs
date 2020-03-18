@@ -23,10 +23,7 @@ namespace CSharp.Classes
         }
 
         public Customer(int id, string name) : this(id)
-        {
-            /* *
-             * Same for this one and its constructor calling
-             * */
+        {   /* Same for this one and its constructor calling */
             this.Name = name;
         }
     }

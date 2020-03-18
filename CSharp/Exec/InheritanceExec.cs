@@ -6,6 +6,18 @@ namespace CSharp.Exec
     {
         public void Execute()
         {
+            UseCarVehicle();
+            // UsePresentation();
+        }
+
+        public void UseCarVehicle()
+        {
+            var car = new Car();
+            var car2 = new Car("180320201050");
+        }
+
+        public void UsePresentation()
+        {
             var text = new Text();
             /* Member of the class */
             text.AddHyperlink("Member from text");
