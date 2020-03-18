@@ -1,3 +1,5 @@
+using System;
+using System.IO;
 using CSharp.Inheritance;
 
 namespace CSharp.Exec
@@ -6,8 +8,9 @@ namespace CSharp.Exec
     {
         public void Execute()
         {
-            UseCarVehicle();
+            // UseCarVehicle();
             // UsePresentation();
+            UseUpcastingDowncasting();
         }
 
         public void UseCarVehicle()
@@ -26,6 +29,20 @@ namespace CSharp.Exec
             /* Members from parent class PresentationObject */
             text.Width = 100;
             text.Copy();
+        }
+
+        public void UseUpcastingDowncasting()
+        {
+            Circle circle = new Circle();
+            Shape shape = circle; // Upcasting - implicit
+            /* Circle cir = (Circle)shape; */ // Downcasting - explicit
+            circle.Width = 200;
+            shape.Width = 400;
+            Console.WriteLine(circle.Width); /* What is gonna be shown? 400*/
+            StreamReader reader = new StreamReader(new MemoryStream()); /*Stream - FileStram, MemoryStream */
+
+            Shape sh = new Circle();
+
         }
     }
 }
