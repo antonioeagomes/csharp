@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CSharp.Poly
 {
-    public class Shape
+    public abstract class Shape
     {
         public int Width { get; set; }
         public int Height { get; set; }
@@ -13,7 +13,11 @@ namespace CSharp.Poly
         // public ShapeType Type { get; set; }
 
         /* A class to be overriden */
-        public virtual void Draw() { }
+        /* As we don't know how to draw a shape per se
+         * this method should be an abstract method.
+         * So the class must be declared as abstract class as well
+        */
+        public abstract void Draw(); // Missing implementation that must be provided in the derived classes
     }
 
     public class Circle : Shape
