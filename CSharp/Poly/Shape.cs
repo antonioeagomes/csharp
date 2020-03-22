@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace CSharp.Poly
 {
     public abstract class Shape
-    {
+    {/*Abstract classes cannot be instanced */
         public int Width { get; set; }
         public int Height { get; set; }
         public float Area { get; set; }

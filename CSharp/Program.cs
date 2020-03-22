@@ -74,7 +74,8 @@ namespace CSharp
                 new MenuItem("Indexers", typeof(DictionariesExec)),
                 new MenuItem("Stopwatch", typeof(StopwatchExec)),
                 new MenuItem("Inheritance", typeof(InheritanceExec)),
-                new MenuItem("Composition", typeof(CompositionExec))
+                new MenuItem("Composition", typeof(CompositionExec)),
+                new MenuItem("Polymorphism", typeof(PolymorphExec))
             };
         }
     }
