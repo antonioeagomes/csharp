@@ -75,7 +75,8 @@ namespace CSharp
                 new MenuItem("Stopwatch", typeof(StopwatchExec)),
                 new MenuItem("Inheritance", typeof(InheritanceExec)),
                 new MenuItem("Composition", typeof(CompositionExec)),
-                new MenuItem("Polymorphism", typeof(PolymorphExec))
+                new MenuItem("Polymorphism", typeof(PolymorphExec)),
+                new MenuItem("Interface", typeof(InterfaceExec))
             };
         }
     }
