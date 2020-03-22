@@ -8,7 +8,36 @@ namespace CSharp.Poly
         public int Width { get; set; }
         public int Height { get; set; }
         public float Area { get; set; }
-        public ShapeType Type { get; set; }
+
+        /* ShapeType will not be necessary when apply polymorphism */
+        // public ShapeType Type { get; set; }
+
+        /* A class to be overriden */
+        public virtual void Draw() { }
+    }
+
+    public class Circle : Shape
+    {
+        public override void Draw()
+        {
+            Console.WriteLine("Draw a Circle");
+        }
+    }
+
+    public class Rectangle : Shape
+    {
+        public override void Draw()
+        {
+            Console.WriteLine("Draw a Rectangle");
+        }
+    }
+
+    public class Triangle : Shape
+    {
+        public override void Draw()
+        {
+            Console.WriteLine("Draw a Triangle");
+        }
     }
 
     public enum ShapeType
@@ -27,21 +56,25 @@ namespace CSharp.Poly
                 /* Not using polymorphism. 
                  * If I have another shape, I must to add one more switch case 
                  * as well another enum shapeType  */
-                switch (item.Type)
-                {
-                    case ShapeType.Circle:
-                        Console.WriteLine("Draw a Circle");
-                        break;
-                    case ShapeType.Rectangle:
-                        Console.WriteLine("Draw a Rectangle");
-                        break;
-                    case ShapeType.Triangle:
-                        Console.WriteLine("Draw a Triangle");
-                        break;
-                    default:
-                        break;
-                }
 
+                /* Block code commented in order to use polymorph
+                 *switch (item.Type)
+                 *{
+                 *    case ShapeType.Circle:
+                 *        Console.WriteLine("Draw a Circle");
+                 *        break;
+                 *    case ShapeType.Rectangle:
+                 *        Console.WriteLine("Draw a Rectangle");
+                 *        break;
+                 *    case ShapeType.Triangle:
+                 *        Console.WriteLine("Draw a Triangle");
+                 *        break;
+                 *    default:
+                 *        break;
+                 *}
+                */
+
+                item.Draw();
             }
         }
     }
