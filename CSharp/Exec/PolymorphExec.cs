@@ -7,7 +7,8 @@ namespace CSharp.Exec
     {
         public void Execute()
         {
-            UseDrawShapes();
+            // UseDrawShapes();
+            UseDbConnection();
         }
 
         public void UseDrawShapes(){
@@ -19,5 +20,15 @@ namespace CSharp.Exec
             listOfShapes.Add(new Triangle());
             canvas.DrawShapes(listOfShapes);
         }
+    
+        public void UseDbConnection() {
+            var sqlserver = new SQLServerConnection("database=bd;uid=root;pwd=pass");
+            sqlserver.Open();
+            sqlserver.Close();
+            var orcale = new OracleConnection("a random connection string for oracle");
+            orcale.Open();
+            orcale.Close();
+        }
+    
     }
 }
