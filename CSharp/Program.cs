@@ -79,7 +79,8 @@ namespace CSharp
                 new MenuItem("Interface", typeof(InterfaceExec)),
                 new MenuItem("WorkflowEngine", typeof(WorkflowEngineExec)),
                 new MenuItem("Generics", typeof(GenericsExec)),
-                new MenuItem("Delegates", typeof(DelegatesExec))
+                new MenuItem("Delegates", typeof(DelegatesExec)),
+                new MenuItem("Lambdas", typeof(LambdasExec)),
             };
         }
     }
