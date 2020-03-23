@@ -76,7 +76,8 @@ namespace CSharp
                 new MenuItem("Inheritance", typeof(InheritanceExec)),
                 new MenuItem("Composition", typeof(CompositionExec)),
                 new MenuItem("Polymorphism", typeof(PolymorphExec)),
-                new MenuItem("Interface", typeof(InterfaceExec))
+                new MenuItem("Interface", typeof(InterfaceExec)),
+                new MenuItem("WorkflowEngine", typeof(WorkflowEngineExec))
             };
         }
     }
