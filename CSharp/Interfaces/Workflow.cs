@@ -15,7 +15,7 @@ namespace CSharp.Interfaces
             _activities.Add(activity);
         }
 
-        public List<IActivity> GetActivities() {
+        public IEnumerable<IActivity> GetActivities() {
             return _activities;
         }
     }
