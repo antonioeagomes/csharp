@@ -81,7 +81,8 @@ namespace CSharp
                 new MenuItem("Generics", typeof(GenericsExec)),
                 new MenuItem("Delegates", typeof(DelegatesExec)),
                 new MenuItem("Lambdas", typeof(LambdasExec)),
-                new MenuItem("Events", typeof(EventsExe))
+                new MenuItem("Events", typeof(EventsExe)),
+                new MenuItem("Extension", typeof(ExtensionExec))
             };
         }
     }
