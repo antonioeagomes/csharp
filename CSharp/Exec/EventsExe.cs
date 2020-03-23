@@ -18,7 +18,9 @@ namespace CSharp.Exec
             var video = new Video() { Title = "Kitty and puppy" };
             var encoder = new VideoEncoder(); // publisher
             var mailService = new MailService(); // subscriber
-            encoder.VideoEncoded += mailService.OnVideoEncoded;
+            var messageService = new MessageService();
+            encoder.VideoEncodedTwo += mailService.OnVideoEncoded;
+            encoder.VideoEncoded += messageService.OnVideoEncoded;
             encoder.Encode(video);
 
             /* Creating subscribers */
