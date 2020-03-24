@@ -82,7 +82,8 @@ namespace CSharp
                 new MenuItem("Delegates", typeof(DelegatesExec)),
                 new MenuItem("Lambdas", typeof(LambdasExec)),
                 new MenuItem("Events", typeof(EventsExe)),
-                new MenuItem("Extension", typeof(ExtensionExec))
+                new MenuItem("Extension", typeof(ExtensionExec)),
+                new MenuItem("Async", typeof(AsyncExec))
             };
         }
     }
